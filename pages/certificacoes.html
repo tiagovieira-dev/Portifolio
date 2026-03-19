@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+  <!--======================| Codificação e Responsividade |======================-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!--======================| SEO |======================-->
+  <meta name="description" content="Portifólio Tiago Vieira" />
+  <meta name="author" content="Tiago Vieira">
+  <meta name="keywords" content="Tiago, Vieira, portifólio, desenvolvedor, sites, webdesing, software" />
+  <meta property="og:title" content="Tiago Vieira - Desenvolvedor Full Stack">
+  <meta name="robots" content="index, follow" />
+
+  <!--======================| Fontes |======================-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" 
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!--======================| CSS |======================-->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <title>Certificações</title>
+
+</head>
+
+<body>
+
+  <!--======================| Background |======================-->
+  <div class="finisher-header" style="width: 100%; height: 100vh"></div>
+
+  <!--======================| Menu |======================-->
+  <div id="menu"></div>
+
+  <script>
+    fetch("../components/menu.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("menu").innerHTML = data;
+      })
+      .catch((error) => console.error("Erro ao carregar o menu:", error));
+  </script>
+  <!--======================| Menu |======================-->
+
+  <!--======================| Certificações |======================-->
+  <section class="container">
+    <div class="certificacoes">
+
+      <h2>Certificações</h2>
+
+      <p class="certificacoes-intro">
+        Ao longo da minha jornada de aprendizado em tecnologia,
+        tenho buscado constantemente aprimorar minhas habilidades
+        por meio de cursos e certificações em desenvolvimento web,
+        programação e ferramentas utilizadas no mercado.
+      </p>
+
+      <div class="certificacoes-grid">
+
+        <article class="certificacao">
+          <h3>Biotechnology Technician</h3>
+          <div class="cert-header">
+            <img src="../assets/ifsc.png" alt="IFSC">
+            <p class="instituicao">Instituto Federal de Santa Catarina</p>
+          </div>
+          <p>
+            Atuação em processos biotecnológicos, incluindo manipulação de organismos, técnicas laboratoriais e
+            aplicação de métodos científicos em áreas como saúde, meio ambiente e indústria.
+          </p>
+          <a href="link-do-certificado.pdf" target="_blank" rel="noopener" class="btn-certificado">
+            Ver certificado
+          </a>
+        </article>
+
+        <article class="certificacao">
+          <h3>Assistant in Chemistry and Biology Laboratory</h3>
+          <div class="cert-header">
+            <img src="../assets/ifsc.png" alt="IFSC">
+            <p class="instituicao">Instituto Federal de Santa Catarina</p>
+          </div>
+          <p>
+            Suporte em rotinas laboratoriais de química e biologia, com preparo de amostras, organização de materiais,
+            execução de experimentos e correção de normas de segurança.
+          </p>
+          <a href="link-do-certificado.pdf" target="_blank" rel="noopener" class="btn-certificado">
+            Ver certificado
+          </a>
+        </article>
+
+        <article class="certificacao">
+          <h3>DataBase Administrator</h3>
+          <div class="cert-header">
+            <img src="../assets/ifrs.png" alt="IFRS">
+            <p class="instituicao">Instituto Federal do Rio Grande do Sul</p>
+          </div>
+          <p>
+            Gerenciamento e manutenção de bancos de dados, incluindo modelagem, otimização de consultas, segurança da
+            informação e garantia de integridade e disponibilidade dos dados.
+          </p>
+          <a href="link-do-certificado.pdf" target="_blank" rel="noopener" class="btn-certificado">
+            Ver certificado
+          </a>
+        </article>
+
+        <article class="certificacao">
+          <h3>Advanced Python</h3>
+          <div class="cert-header">
+            <img src="../assets/ifmg.png" alt="IFMG">
+            <p class="instituicao">Instituto Federal de Minas Gerais</p>
+          </div>
+          <p>
+            Desenvolvimento avançado em Python, com foco em automação, manipulação de dados, boas práticas de código e
+            utilização de bibliotecas modernas para soluções eficientes.
+          </p>
+          <a href="link-do-certificado.pdf" target="_blank" rel="noopener" class="btn-certificado">
+            Ver certificado
+          </a>
+        </article>
+
+        <article class="certificacao">
+          <h3>Automated Systems Operator and Programmer</h3>
+          <div class="cert-header">
+            <img src="../assets/ifmg.png" alt="IFMG">
+            <p class="instituicao">Instituto Federal de Minas Gerais</p>
+          </div>
+          <p>
+            Operação e programação de sistemas automatizados, envolvendo lógica de controle, integração de dispositivos
+            e monitoramento de processos industriais.
+          </p>
+          <a href="link-do-certificado.pdf" target="_blank" rel="noopener" class="btn-certificado">
+            Ver certificado
+          </a>
+        </article>
+
+        <article class="certificacao">
+          <h3>Advanced Big Data and Data Mining</h3>
+          <div class="cert-header">
+            <img src="../assets/ifmg.png" alt="IFMG">
+            <p class="instituicao">Instituto Federal de Minas Gerais</p>
+          </div>
+          <p>
+            Análise de grandes volumes de dados utilizando técnicas de Big Data e mineração de dados, com foco em
+            extração de padrões, insights e suporte à tomada de decisão.
+          </p>
+          <a href="link-do-certificado.pdf" target="_blank" rel="noopener" class="btn-certificado">
+            Ver certificado
+          </a>
+        </article>
+
+        <article class="certificacao">
+          <h3>Mobile Programming</h3>
+          <div class="cert-header">
+            <img src="../assets/ifmg.png" alt="IFMG">
+            <p class="instituicao">Instituto Federal de Minas Gerais</p>
+          </div>
+          <p>
+            Desenvolvimento de aplicações mobile, com foco em interfaces responsivas, experiência do usuário e
+            integração com APIs e serviços externos.
+          </p>
+          <a href="link-do-certificado.pdf" target="_blank" rel="noopener" class="btn-certificado">
+            Ver certificado
+          </a>
+        </article>
+
+        <article class="certificacao">
+          <h3>Chromatography</h3>
+          <div class="cert-header">
+            <img src="../assets/embrapa.png" alt="Embrapa">
+            <p class="instituicao">Embrapa</p>
+          </div>
+          <p>
+            Aplicação de técnicas cromatográficas para separação e análise de substâncias, com foco em precisão,
+            controle de qualidade e interpretação de resultados laboratoriais.
+          </p>
+          <a href="link-do-certificado.pdf" target="_blank" rel="noopener" class="btn-certificado">
+            Ver certificado
+          </a>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+  <!--======================| Certificações |======================-->
+
+  <!--======================| Rodapé |======================-->
+  <div id="rodape"></div>
+
+  <script>
+    fetch("../components/rodape.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("rodape").innerHTML = data;
+      })
+      .catch((error) => console.error("Erro ao carregar o rodapé:", error));
+  </script>
+  <!--======================| Rodapé |======================-->
+
+  <!--======================| Background |======================-->
+  <script src="../js/finisher-header.es5.min.js" type="text/javascript"></script>
+  <script src="../components/background.js"></script>
+  <!--======================| Background |======================-->
+
+</body>
+
+</html>

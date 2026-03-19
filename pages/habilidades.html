@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+  <!--======================| Codificação e Responsividade |======================-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!--======================| SEO |======================-->
+  <meta name="description" content="Portifólio Tiago Vieira" />
+  <meta name="author" content="Tiago Vieira">
+  <meta name="keywords" content="Tiago, Vieira, portifólio, desenvolvedor, sites, webdesing, software" />
+  <meta property="og:title" content="Tiago Vieira - Desenvolvedor Full Stack">
+  <meta name="robots" content="index, follow" />
+
+  <!--======================| Fontes |======================-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" 
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!--======================| CSS |======================-->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <title>Contatos</title>
+
+</head>
+
+<body>
+
+  <!--======================| Background |======================-->
+  <div class="finisher-header" style="width: 100%; height: 100vh"></div>
+
+  <!--======================| Menu |======================-->
+  <div id="menu"></div>
+
+  <script>
+    fetch("../components/menu.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("menu").innerHTML = data;
+      })
+      .catch((error) => console.error("Erro ao carregar o menu:", error));
+  </script>
+  <!--======================| Menu |======================-->
+
+  <!--======================| Habilidades |======================-->
+  <section class="habilidades">
+    <div class="container">
+
+      <h2>Habilidades</h2>
+
+      <p class="skills-desc">
+        Tecnologias utilizadas no desenvolvimento de soluções modernas,
+        com foco em performance, organização e escalabilidade.
+      </p>
+
+      <div class="skills-group">
+        <h3>Frontend</h3>
+        <div class="hex-container">
+          <div class="hex-item"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+          <div class="hex-item"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+          <div class="hex-item"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+          <div class="hex-item"><i class="fa-brands fa-react"></i><span>React</span></div>
+          <div class="hex-item"><i class="fa-brands fa-vuejs"></i><span>Vue</span></div>
+        </div>
+      </div>
+
+      <div class="skills-group">
+        <h3>Backend</h3>
+        <div class="hex-container">
+          <div class="hex-item"><i class="fa-brands fa-php"></i><span>PHP</span></div>
+          <div class="hex-item"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+          <div class="hex-item"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+          <div class="hex-item"><i class="fa-solid fa-server"></i><span>API REST</span></div>
+          <div class="hex-item"><i class="fa-brands fa-python"></i><span>Python</span></div>
+        </div>
+      </div>
+
+      <div class="skills-group">
+        <h3>Ferramentas</h3>
+        <div class="hex-container">
+          <div class="hex-item"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+          <div class="hex-item"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+          <div class="hex-item"><i class="fa-brands fa-figma"></i><span>Figma</span></div>
+          <div class="hex-item"><i class="fa-solid fa-code"></i><span>VS Code</span></div>
+          <div class="hex-item"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
+        </div>
+      </div>
+
+      <p>
+        Experiência no desenvolvimento de aplicações completas, desde a interface
+        até a integração com backend e banco de dados.
+      </p>
+
+    </div>
+  </section>
+  <!--======================| Habilidades |======================-->
+
+  <!--======================| Rodapé |======================-->
+  <div id="rodape"></div>
+
+  <script>
+    fetch("../components/rodape.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("rodape").innerHTML = data;
+      })
+      .catch((error) => console.error("Erro ao carregar o rodapé:", error));
+  </script>
+  <!--======================| Rodapé |======================-->
+
+  <!--======================| Background |======================-->
+  <script src="../js/finisher-header.es5.min.js" type="text/javascript"></script>
+  <script src="../components/background.js"></script>
+  <!--======================| Background |======================-->
+
+</body>
+
+</html>
