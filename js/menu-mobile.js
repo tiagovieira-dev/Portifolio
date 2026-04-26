@@ -3,6 +3,7 @@ function iniciarMenu() {
   const menu = document.querySelector(".menu");
   const menuLinks = document.querySelectorAll(".menu a");
   const logoLink = document.querySelector(".logo a");
+  const backdrop = document.querySelector("#menu-backdrop");
 
   if (!toggle || !menu) {
     console.error("Menu ou botão não encontrado");
@@ -34,7 +35,62 @@ function iniciarMenu() {
     }
   });
 
+  const isMobile = () => window.matchMedia("(max-width: 768px)").matches;
+  const closeMenu = () => {
+    menu.classList.remove("active");
+    toggle.classList.remove("active");
+    toggle.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("menu-open");
+  };
+
+  const openMenu = () => {
+    menu.classList.add("active");
+    toggle.classList.add("active");
+    toggle.setAttribute("aria-expanded", "true");
+    document.body.classList.add("menu-open");
+  };
+
+  const toggleMenu = () => {
+    if (menu.classList.contains("active")) {
+      closeMenu();
+      return;
+    }
+    openMenu();
+  };
+
   toggle.addEventListener("click", () => {
-    menu.classList.toggle("active");
+    if (!isMobile()) return;
+    toggleMenu();
+  });
+
+  toggle.addEventListener("keydown", (event) => {
+    if (!isMobile()) return;
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      toggleMenu();
+    }
+  });
+
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (!isMobile()) return;
+      closeMenu();
+    });
+  });
+
+  if (backdrop) {
+    backdrop.addEventListener("click", closeMenu);
+  }
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (!isMobile()) {
+      closeMenu();
+    }
   });
 }
