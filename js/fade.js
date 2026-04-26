@@ -1,20 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const elements = document.querySelectorAll(
+  const autoRevealElements = document.querySelectorAll(
     "section h2, section p, section h3, section .card, section .servico, section .timeline-item, section .btn-cta"
   );
 
-  elements.forEach((el, index) => {
+  autoRevealElements.forEach((el) => {
     el.classList.add("reveal");
   });
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("active");
-      }
-    });
-  }, {
-  });
+  const revealElements = document.querySelectorAll(".reveal");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.15,
+    }
+  );
 
-  elements.forEach((el) => observer.observe(el));
+  revealElements.forEach((el) => observer.observe(el));
 });

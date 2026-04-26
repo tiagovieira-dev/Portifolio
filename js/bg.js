@@ -4,14 +4,19 @@ const ctx = canvas.getContext("2d");
 let particles = [];
 let scrollTarget = 0;
 let scrollCurrent = 0;
+let frameTick = 0;
+
+function isMobileOrTablet() {
+  return window.innerWidth <= 1024;
+}
 
 function getParticleCount() {
   const width = window.innerWidth;
   const dpr = window.devicePixelRatio || 1;
 
-  if (width <= 768) return 70;
+  if (width <= 768) return 34;
 
-  if (width <= 1024) return 100;
+  if (width <= 1024) return 58;
 
   if (width >= 2560) return 90;
 
@@ -20,15 +25,28 @@ function getParticleCount() {
   return 200;
 }
 
+function getMaxDistance() {
+  const width = window.innerWidth;
+  if (width <= 768) return 72;
+  if (width <= 1024) return 90;
+  return 120;
+}
+
 const CONFIG = {
   count: getParticleCount(),
   color: "#17D1B2",
-  maxDistance: 120,
+  maxDistance: getMaxDistance(),
 };
 
 function resize() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  const dpr = window.devicePixelRatio || 1;
+  const pixelRatio = isMobileOrTablet() ? 1 : Math.min(dpr, 1.5);
+
+  canvas.width = Math.floor(window.innerWidth * pixelRatio);
+  canvas.height = Math.floor(window.innerHeight * pixelRatio);
+  canvas.style.width = `${window.innerWidth}px`;
+  canvas.style.height = `${window.innerHeight}px`;
+  ctx.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
 }
 
 resize();
@@ -40,6 +58,7 @@ window.addEventListener("resize", () => {
   resizeTimeout = setTimeout(() => {
     resize();
     CONFIG.count = getParticleCount();
+    CONFIG.maxDistance = getMaxDistance();
     init();
   }, 200);
 });
@@ -92,9 +111,10 @@ class Particle {
 
 function drawLines() {
   const maxDistSq = CONFIG.maxDistance * CONFIG.maxDistance;
+  const step = isMobileOrTablet() ? 2 : 1;
 
-  for (let i = 0; i < particles.length; i++) {
-    for (let j = i + 1; j < particles.length; j++) {
+  for (let i = 0; i < particles.length; i += step) {
+    for (let j = i + 1; j < particles.length; j += step) {
       const dx = particles[i].x - particles[j].x;
       const dy = particles[i].renderY - particles[j].renderY;
 
@@ -125,6 +145,14 @@ function init() {
 }
 
 function animate() {
+  if (isMobileOrTablet()) {
+    frameTick = (frameTick + 1) % 2;
+    if (frameTick !== 0) {
+      requestAnimationFrame(animate);
+      return;
+    }
+  }
+
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   // suaviza scroll (parallax)
