@@ -230,20 +230,20 @@ section > .container > *:last-child {
 
   .menu {
     position: fixed;
-    top: 68px;
+    top: 60px;
     right: 0;
-    width: min(320px, 88vw);
-    height: calc(100vh - 80px);
-    border-radius: 16px 0 0 16px;
-    background: linear-gradient(180deg, rgba(11, 11, 11, 0.97), rgba(5, 18, 35, 0.97));
-    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    width: 100%;
+    height: calc(100vh - 60px);
+    border-radius: 0;
+    background: #07101c;
+    border-left: none;
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
 
-    padding: 24px 20px;
-    gap: 8px;
+    padding: 18px 16px;
+    gap: 6px;
 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -264,7 +264,7 @@ section > .container > *:last-child {
   .menu a {
     width: 100%;
     font-size: 1rem;
-    padding: 12px 10px;
+    padding: 13px 12px;
     border: 1px solid transparent;
     border-radius: 10px;
     transition: all 0.25s ease;
@@ -293,7 +293,7 @@ section > .container > *:last-child {
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(2px);
+    backdrop-filter: none;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.25s ease, visibility 0.25s ease;
@@ -1006,6 +1006,10 @@ section > .container > *:last-child {
 @media (max-width: 768px) {
   .container {
     padding: 40px 15px;
+  }
+
+  .sobre-mim .cards {
+    grid-template-columns: 1fr;
   }
 
   .bloco {
