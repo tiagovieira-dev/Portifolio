@@ -250,11 +250,17 @@ section > .container > *:last-child {
     z-index: 4300;
     overflow-y: auto;
     transform: translateX(110%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
 
   .menu.active {
     transform: translateX(0);
     box-shadow: -24px 0 50px rgba(0, 0, 0, 0.45);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .menu li {
@@ -298,6 +304,7 @@ section > .container > *:last-child {
     visibility: hidden;
     transition: opacity 0.25s ease, visibility 0.25s ease;
     z-index: 4200;
+    pointer-events: none;
   }
 
   body.menu-open {
@@ -307,6 +314,7 @@ section > .container > *:last-child {
   body.menu-open .menu-backdrop {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
   }
 }
 /*Menu*/

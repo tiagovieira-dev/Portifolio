@@ -35,7 +35,6 @@ function iniciarMenu() {
     }
   });
 
-  const isMobile = () => window.matchMedia("(max-width: 768px)").matches;
   const closeMenu = () => {
     menu.classList.remove("active");
     toggle.classList.remove("active");
@@ -59,12 +58,10 @@ function iniciarMenu() {
   };
 
   toggle.addEventListener("click", () => {
-    if (!isMobile()) return;
     toggleMenu();
   });
 
   toggle.addEventListener("keydown", (event) => {
-    if (!isMobile()) return;
     if (event.key === "Enter" || event.key === " ") {
       event.preventDefault();
       toggleMenu();
@@ -73,7 +70,6 @@ function iniciarMenu() {
 
   menuLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      if (!isMobile()) return;
       closeMenu();
     });
   });
@@ -88,9 +84,5 @@ function iniciarMenu() {
     }
   });
 
-  window.addEventListener("resize", () => {
-    if (!isMobile()) {
-      closeMenu();
-    }
-  });
+  window.addEventListener("resize", closeMenu);
 }
