@@ -370,7 +370,7 @@ section > .container > *:last-child {
 }
 
 .nome {
-  font-size: clamp(8.5rem, 7vw, 5.5rem);
+  font-size: 8.5rem;
   font-weight: 700;
   letter-spacing: 1px;
 
@@ -1204,6 +1204,11 @@ section > .container > *:last-child {
 
 .contato-item .icon {
   font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  flex-shrink: 0;
 }
 
 .contato-item strong {
@@ -1651,9 +1656,23 @@ footer p {
 .btn-demo:focus-visible,
 .btn-code:focus-visible,
 .btn-certificado:focus-visible,
-.btn-contato:focus-visible {
+.btn-contato:focus-visible,
+#menu-toggle:focus-visible,
+.contato-item:focus-visible,
+.skill-link:focus-visible,
+.menu-desktop a:focus-visible,
+.menu-mobile-links a:focus-visible,
+.logo a:focus-visible,
+footer a:focus-visible,
+.projeto-actions a:focus-visible {
   outline: 2px solid #17d1b2;
   outline-offset: 3px;
+}
+
+.input-group input:focus-visible,
+.input-group textarea:focus-visible {
+  outline: 2px solid #17d1b2;
+  outline-offset: 2px;
 }
 
 .btn-cta,

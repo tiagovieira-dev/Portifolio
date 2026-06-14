@@ -95,6 +95,22 @@
   content: "\f17c";
 }
 
+.fa-brands.fa-instagram::before {
+  content: "\f16d";
+}
+
+.fa-brands.fa-linkedin::before {
+  content: "\f08c";
+}
+
+.fa-brands.fa-whatsapp::before {
+  content: "\f232";
+}
+
+.fa-solid.fa-envelope::before {
+  content: "\f0e0";
+}
+
 .fa-solid.fa-database::before {
   content: "\f1c0";
 }
