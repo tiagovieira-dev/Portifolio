@@ -1,34 +1,28 @@
 function iniciarMenu() {
   const toggle = document.querySelector("#menu-toggle");
   const mobileMenu = document.querySelector("#mobile-menu");
-  const desktopLinks = document.querySelectorAll(".menu-desktop a");
   const mobileLinks = document.querySelectorAll(".menu-mobile-links a");
-  const logoLink = document.querySelector(".logo a");
+  const mobileCta = document.querySelector(".menu-mobile-cta");
   const backdrop = document.querySelector("#menu-backdrop");
-  const allLinks = [...desktopLinks, ...mobileLinks];
+  const mainMenu = document.querySelector("#main-menu");
+  const routeLinks = document.querySelectorAll("[data-route]");
 
   if (!toggle || !mobileMenu) {
     console.error("Menu ou botão não encontrado");
     return;
   }
 
-  // Ajusta links do menu para funcionar tanto na index quanto nas páginas internas.
   const currentPath = window.location.pathname.replace(/\/+$/, "");
   const isPageInsidePagesDir = /\/pages\//.test(currentPath);
   const routePrefix = isPageInsidePagesDir ? "../" : "";
 
-  if (logoLink && logoLink.dataset.route) {
-    logoLink.href = `${routePrefix}${logoLink.dataset.route}`;
-  }
-
-  allLinks.forEach((link) => {
+  routeLinks.forEach((link) => {
     if (link.dataset.route) {
       link.href = `${routePrefix}${link.dataset.route}`;
     }
   });
 
-  // Define o item ativo conforme a rota atual.
-  allLinks.forEach((link) => {
+  routeLinks.forEach((link) => {
     link.removeAttribute("aria-current");
     const linkPath = new URL(link.href, window.location.origin).pathname.replace(/\/+$/, "");
 
@@ -78,6 +72,12 @@ function iniciarMenu() {
     });
   });
 
+  if (mobileCta) {
+    mobileCta.addEventListener("click", () => {
+      closeMenu();
+    });
+  }
+
   if (backdrop) {
     backdrop.addEventListener("click", closeMenu);
   }
@@ -89,4 +89,12 @@ function iniciarMenu() {
   });
 
   window.addEventListener("resize", closeMenu);
+
+  const updateMenuScroll = () => {
+    if (!mainMenu) return;
+    mainMenu.classList.toggle("is-scrolled", window.scrollY > 16);
+  };
+
+  updateMenuScroll();
+  window.addEventListener("scroll", updateMenuScroll, { passive: true });
 }

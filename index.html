@@ -67,7 +67,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body>
+  <body class="home-pagina">
     <!--======================| Menu |======================-->
     <div id="menu-container"></div>
 
@@ -85,29 +85,47 @@
     <!--======================| Menu |======================-->
 
     <!--======================| Início |======================-->
-    <section class="heros">
+    <section class="heros" id="inicio">
       <canvas id="bg-canvas"></canvas>
       <div class="container hero">
         <div class="hero-texto">
-          <span class="badge reveal reveal-premium">// desenvolvedor & analista de sistemas</span>
+          <span class="badge reveal reveal-premium">Desenvolvedor Full Stack</span>
 
           <h1 class="nome reveal reveal-premium">Tiago Vieira</h1>
 
-          <p class="descricao">
+          <p class="descricao reveal reveal-premium">
             Crio sites e sistemas que transformam ideias em soluções digitais. Formado em Análise e Desenvolvimento de Sistemas e pós-graduando em Engenharia de Software.
           </p>
 
+          <p class="contato-status hero-status reveal reveal-premium"><span class="status-dot" aria-hidden="true"></span>Disponível para novos projetos</p>
+
           <div class="localizacao reveal reveal-premium">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
               <path d="M8 0a5 5 0 0 0-5 5c0 3.25 5 11 5 11s5-7.75 5-11a5 5 0 0 0-5-5zm0 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" />
             </svg>
             <span>Lages, SC — Brasil</span>
           </div>
 
+          <div class="home-hero-stats reveal reveal-premium" aria-label="Indicadores profissionais">
+            <article>
+              <strong>3+</strong>
+              <span>Projetos entregues</span>
+            </article>
+            <article>
+              <strong>Full</strong>
+              <span>Stack moderna</span>
+            </article>
+            <article>
+              <strong>24h</strong>
+              <span>Resposta inicial</span>
+            </article>
+          </div>
+
           <div class="botoes-inicio reveal reveal-premium">
+            <a href="#contatos" class="btn-inicio btn-inicio--primary">Solicitar orçamento</a>
+            <a href="https://wa.me/49999981782" class="btn-inicio" target="_blank" rel="noopener noreferrer">WhatsApp</a>
             <a href="https://github.com/tiagovieira-dev" class="btn-inicio" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://www.linkedin.com/in/tiago-vieira-0540531aa/" class="btn-inicio" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://wa.me/49999981782" class="btn-inicio destaque" target="_blank" rel="noopener noreferrer">Whatsapp</a>
           </div>
         </div>
       </div>
@@ -115,18 +133,20 @@
     <!--======================| Início |======================-->
 
     <!--======================| Serviços |======================-->
-    <section class="servicos">
+    <section class="servicos" id="servicos">
       <div class="container">
-        <header class="reveal reveal-premium">
-          <h2>Serviços</h2>
-        </header>
-
-        <p class="tag">Soluções Digitais</p>
-
-        <p class="servicos-sub">Desenvolvimento de soluções modernas focadas em performance, escalabilidade e resultados reais para o seu negócio.</p>
+        <div class="home-secao-header reveal reveal-premium">
+          <header>
+            <h2>Serviços</h2>
+            <p class="tag">Soluções Digitais</p>
+          </header>
+          <p class="home-secao-desc">Desenvolvimento de soluções modernas focadas em performance, escalabilidade e resultados reais para o crescimento do seu negócio.</p>
+        </div>
 
         <div class="servicos-grid">
-          <div class="servico reveal reveal-premium">
+          <article class="servico reveal reveal-premium">
+            <span class="servico-num" aria-hidden="true">01</span>
+            <span class="servico-tag">Institucional</span>
             <h3>Desenvolvimento de Sites Profissionais</h3>
             <p>Criação de sites institucionais modernos, rápidos e responsivos, pensados para gerar credibilidade, atrair clientes e aumentar sua presença online.</p>
             <ul>
@@ -134,9 +154,11 @@
               <li>Alta performance e carregamento rápido</li>
               <li>Otimizado para SEO</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="servico reveal reveal-premium">
+          <article class="servico reveal reveal-premium">
+            <span class="servico-num" aria-hidden="true">02</span>
+            <span class="servico-tag">Sob medida</span>
             <h3>Sistemas Web Sob Medida</h3>
             <p>Desenvolvimento de sistemas personalizados para automatizar processos, organizar dados e aumentar a eficiência da sua empresa.</p>
             <ul>
@@ -144,9 +166,11 @@
               <li>Integração com banco de dados</li>
               <li>Escalável e seguro</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="servico reveal reveal-premium">
+          <article class="servico reveal reveal-premium">
+            <span class="servico-num" aria-hidden="true">03</span>
+            <span class="servico-tag">Performance</span>
             <h3>Otimização e Performance</h3>
             <p>Melhoria de velocidade, estrutura e desempenho do seu site para oferecer melhor experiência ao usuário e melhor posicionamento no Google.</p>
             <ul>
@@ -154,9 +178,11 @@
               <li>Boas práticas de SEO técnico</li>
               <li>Melhoria no Lighthouse</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="servico reveal reveal-premium">
+          <article class="servico reveal reveal-premium">
+            <span class="servico-num" aria-hidden="true">04</span>
+            <span class="servico-tag">Contínuo</span>
             <h3>Manutenção e Suporte</h3>
             <p>Atualizações, correções e melhorias contínuas para garantir que seu sistema ou site funcione sempre com segurança e estabilidade.</p>
             <ul>
@@ -164,43 +190,82 @@
               <li>Atualizações constantes</li>
               <li>Suporte técnico</li>
             </ul>
-          </div>
+          </article>
         </div>
 
         <div class="servicos-cta reveal reveal-premium">
           <div class="cta-content">
-            <h3>Pronto para levar seu projeto para o próximo nível?</h3>
-            <p>Desenvolvo soluções digitais sob medida, com foco em performance, design moderno e resultados reais para o seu negócio.</p>
-
-            <a href="pages/contatos.html" class="btn-cta">Solicitar orçamento</a>
+            <span class="cta-eyebrow">Orçamento sem compromisso</span>
+            <h3>Seu próximo site ou sistema começa aqui</h3>
+            <p>Conte sua ideia e receba uma proposta personalizada com escopo, prazo e investimento alinhados ao seu objetivo.</p>
+            <a href="pages/contatos.html" class="btn-cta">Quero minha proposta<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
           </div>
+        </div>
+
+        <div class="home-secao-footer reveal reveal-premium">
+          <a href="pages/servicos.html" class="home-secao-link">Ver todos os serviços<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
     <!--======================| Serviços |======================-->
 
     <!--======================| Projetos |======================-->
-    <section class="projetos">
+    <section class="projetos" id="projetos">
       <div class="container">
-        <div class="projetos-header reveal reveal-premium">
-          <header class="reveal reveal-premium">
+        <div class="home-secao-header reveal reveal-premium">
+          <header>
             <h2>Projetos</h2>
+            <p class="tag">Portfólio</p>
           </header>
-          <p class="tag">Portfólio</p>
+          <p class="home-secao-desc">Seleção de trabalhos desenvolvidos com foco em design moderno, performance, usabilidade e soluções digitais alinhadas aos objetivos de cada negócio.</p>
+        </div>
 
-          <p>Alguns dos projetos que desenvolvi, focados em performance, design moderno e soluções reais.</p>
+        <div class="home-projetos-intro reveal reveal-premium">
+          <p class="home-projetos-eyebrow">Cases reais de desenvolvimento web</p>
+          <div class="home-projetos-meta">
+            <span>Sites institucionais</span>
+            <span>Sistemas web</span>
+            <span>UI responsiva</span>
+            <span>SEO técnico</span>
+          </div>
+        </div>
+
+        <div class="sobre-stats reveal reveal-premium" aria-label="Indicadores do portfólio">
+          <article class="sobre-stat">
+            <strong>3+</strong>
+            <span>Projetos entregues</span>
+          </article>
+          <article class="sobre-stat">
+            <strong>100%</strong>
+            <span>Layout responsivo</span>
+          </article>
+          <article class="sobre-stat">
+            <strong>Fast</strong>
+            <span>Performance otimizada</span>
+          </article>
+          <article class="sobre-stat">
+            <strong>Full</strong>
+            <span>Stack moderna</span>
+          </article>
+        </div>
+
+        <div class="home-subsecao reveal reveal-premium">
+          <p class="tag">Cases</p>
+          <h3>Projetos em destaque</h3>
+          <p class="sobre-secao-desc">Cada projeto combina estratégia visual, arquitetura sólida e execução técnica orientada a resultado.</p>
         </div>
 
         <div class="projetos-grid">
           <article class="projeto-card reveal reveal-premium">
             <div class="projeto-img">
-              <img src="assets/trc.png" loading="lazy" alt="Projeto 1" />
+              <span class="projeto-tag">Institucional</span>
+              <img src="assets/trc.png" loading="lazy" alt="Screenshot do site Transportador Catarinense" />
             </div>
 
             <div class="projeto-content">
+              <span class="projeto-tipo">Transporte rodoviário</span>
               <h3>Transportador Catarinense</h3>
-
-              <p>Plataforma institucional para empresa de transporte rodoviário, com foco em captação de clientes e performance.</p>
+              <p>Plataforma institucional para empresa de transporte rodoviário, com foco em captação de clientes, credibilidade e performance.</p>
 
               <div class="techs">
                 <span>HTML</span>
@@ -218,13 +283,14 @@
 
           <article class="projeto-card reveal reveal-premium">
             <div class="projeto-img">
-              <img src="assets/madelog.png" loading="lazy" alt="Projeto 2" />
+              <span class="projeto-tag">Institucional</span>
+              <img src="assets/madelog.png" loading="lazy" alt="Screenshot do site Madelog Madeireira" />
             </div>
 
             <div class="projeto-content">
+              <span class="projeto-tipo">Indústria madeireira</span>
               <h3>Madelog</h3>
-
-              <p>Plataforma institucional desenvolvida para a madeireira Madelog, com foco na apresentação de serviços, valorização da qualidade da madeira e captação de clientes.</p>
+              <p>Plataforma institucional para madeireira, com foco na apresentação de serviços, valorização da qualidade da madeira e captação de clientes.</p>
 
               <div class="techs">
                 <span>HTML</span>
@@ -243,13 +309,14 @@
 
           <article class="projeto-card reveal reveal-premium">
             <div class="projeto-img">
-              <img src="assets/madeiragest.png" loading="lazy" alt="Projeto 3" />
+              <span class="projeto-tag">Sistema web</span>
+              <img src="assets/madeiragest.png" loading="lazy" alt="Screenshot do sistema MadeiraGest" />
             </div>
 
             <div class="projeto-content">
+              <span class="projeto-tipo">Gestão operacional</span>
               <h3>MadeiraGest</h3>
-
-              <p>Sistema web CRUD desenvolvido para gestão de operações da Madeiragest, com foco no controle de cadastros, organização de dados e eficiência nos processos internos.</p>
+              <p>Sistema web CRUD para gestão de operações, com controle de cadastros, organização de dados e eficiência nos processos internos.</p>
 
               <div class="techs">
                 <span>HTML</span>
@@ -267,401 +334,567 @@
             </div>
           </article>
         </div>
+
+        <div class="bloco home-bloco home-projetos-metodologia">
+          <div class="home-subsecao reveal reveal-premium">
+            <p class="tag">Metodologia</p>
+            <h3>Como conduzo cada projeto</h3>
+            <p class="sobre-secao-desc">Processo claro, entregas parciais e comunicação objetiva do início ao pós-entrega.</p>
+          </div>
+
+          <div class="sobre-processo">
+            <article class="sobre-passo reveal reveal-premium">
+              <span class="sobre-passo-num">1</span>
+              <h4>Briefing estratégico</h4>
+              <p>Entendo metas, público-alvo e posicionamento para definir escopo e prioridades com clareza.</p>
+            </article>
+
+            <article class="sobre-passo reveal reveal-premium">
+              <span class="sobre-passo-num">2</span>
+              <h4>Desenvolvimento iterativo</h4>
+              <p>Executo em etapas com validações contínuas, garantindo alinhamento antes de cada entrega.</p>
+            </article>
+
+            <article class="sobre-passo reveal reveal-premium">
+              <span class="sobre-passo-num">3</span>
+              <h4>Entrega & evolução</h4>
+              <p>Entrego base sólida, otimizada e pronta para evoluir, com suporte inicial para ajustes.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="home-secao-footer reveal reveal-premium">
+          <a href="pages/projetos.html" class="home-secao-link">Ver portfólio completo<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
+        </div>
       </div>
     </section>
     <!--======================| Projetos |======================-->
 
     <!--======================| Sobre |======================-->
-    <section class="sobre-mim">
+    <section class="sobre-mim" id="sobre">
       <div class="container">
-        <header>
-          <h2>Sobre Mim</h2>
-          <p class="tag">Trajetória & Evolução Profissional</p>
-        </header>
+        <div class="home-secao-header reveal reveal-premium">
+          <header>
+            <h2>Sobre Mim</h2>
+            <p class="tag">Trajetória & Evolução Profissional</p>
+          </header>
+        </div>
 
-        <p class="intro">
-          Desenvolvedor com foco em aplicações web modernas, performance e soluções escaláveis. Possuo background técnico em ambiente industrial, o que fortalece minha capacidade analítica,
-          organização e resolução de problemas complexos.
-        </p>
+        <div class="sobre-hero reveal reveal-premium">
+          <div class="sobre-hero-foto">
+            <img src="assets/perfil.jpg" width="280" height="280" loading="lazy" alt="Foto de Tiago Vieira, desenvolvedor full stack" />
+          </div>
 
-        <div class="bloco">
-          <h3>Formação Acadêmica</h3>
+          <div class="sobre-hero-texto">
+            <p class="sobre-hero-cargo">Desenvolvedor Full Stack · Analista de Sistemas</p>
+            <h3 class="sobre-hero-nome">Tiago Vieira</h3>
 
-          <div class="cards">
-            <div class="card reveal reveal-premium">
-              <h4>Técnico em Biotecnologia</h4>
-              <span>IFSC Lages • 2021 - 2022</span>
-              <p>Formação técnica com forte atuação em laboratório, microbiologia e análises químicas. Desenvolvimento de pensamento científico, precisão técnica e organização.</p>
-            </div>
+            <p class="intro">
+              Desenvolvedor com foco em aplicações web modernas, performance e soluções escaláveis. Possuo background técnico em ambiente industrial, o que fortalece minha capacidade analítica, organização e resolução de problemas complexos.
+            </p>
 
-            <div class="card reveal reveal-premium">
-              <h4>Engenharia Química</h4>
-              <span>IFSC Lages • 2023 (interrompido)</span>
-              <p>Base em processos industriais, termodinâmica e engenharia. Experiência que contribuiu para raciocínio analítico e resolução de problemas complexos.</p>
-            </div>
+            <p class="sobre-hero-visao">
+              Minha atuação combina estratégia de negócio com execução técnica — construo soluções digitais que apoiam crescimento, posicionamento e eficiência operacional.
+            </p>
 
-            <div class="card destaque reveal reveal-premium">
-              <h4>Análise e Desenvolvimento de Sistemas</h4>
-              <span>Estácio • 2024 - 2027 (em andamento)</span>
-              <p>Formação focada em desenvolvimento web, lógica de programação e construção de sistemas. Aplicação prática em projetos reais e evolução contínua.</p>
+            <div class="sobre-hero-meta">
+              <span>Lages, SC — Brasil</span>
+              <span>Pós-graduando em Eng. de Software</span>
             </div>
           </div>
         </div>
 
-        <div class="bloco">
-          <h3>Experiência Profissional</h3>
+        <div class="sobre-stats reveal reveal-premium" aria-label="Destaques profissionais">
+          <article class="sobre-stat">
+            <strong>Full Stack</strong>
+            <span>Sites e sistemas web</span>
+          </article>
+          <article class="sobre-stat">
+            <strong>3+</strong>
+            <span>Projetos entregues</span>
+          </article>
+          <article class="sobre-stat">
+            <strong>ADS</strong>
+            <span>Graduação em andamento</span>
+          </article>
+          <article class="sobre-stat">
+            <strong>100%</strong>
+            <span>Foco em resultado</span>
+          </article>
+        </div>
 
-          <div class="timeline">
+        <div class="sobre-resumo reveal reveal-premium" aria-label="Competências em destaque">
+          <span>Performance & SEO</span>
+          <span>Arquitetura escalável</span>
+          <span>Visão de negócio</span>
+          <span>Entrega orientada a resultado</span>
+        </div>
+
+        <div class="bloco home-bloco">
+          <div class="home-subsecao reveal reveal-premium">
+            <p class="tag">Formação</p>
+            <h3>Formação Acadêmica</h3>
+            <p class="sobre-secao-desc">Trajetória multidisciplinar que une rigor analítico, visão de processos e desenvolvimento de software.</p>
+          </div>
+
+          <div class="cards">
+            <article class="card reveal reveal-premium">
+              <span class="card-etapa">2021 — 2022</span>
+              <h4>Técnico em Biotecnologia</h4>
+              <span class="card-inst">IFSC · Lages</span>
+              <p>Formação técnica com forte atuação em laboratório, microbiologia e análises químicas. Desenvolvimento de pensamento científico, precisão técnica e organização.</p>
+            </article>
+
+            <article class="card reveal reveal-premium">
+              <span class="card-etapa">2023</span>
+              <h4>Engenharia Química</h4>
+              <span class="card-inst">IFSC · Lages · interrompido</span>
+              <p>Base em processos industriais, termodinâmica e engenharia. Experiência que contribuiu para raciocínio analítico e resolução de problemas complexos.</p>
+            </article>
+
+            <article class="card destaque reveal reveal-premium">
+              <span class="card-badge">Em andamento</span>
+              <span class="card-etapa">2024 — 2027</span>
+              <h4>Análise e Desenvolvimento de Sistemas</h4>
+              <span class="card-inst">Estácio</span>
+              <p>Formação focada em desenvolvimento web, lógica de programação e construção de sistemas. Aplicação prática em projetos reais e evolução contínua.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="bloco home-bloco">
+          <div class="home-subsecao reveal reveal-premium">
+            <p class="tag">Experiência</p>
+            <h3>Experiência Profissional</h3>
+            <p class="sobre-secao-desc">Atuação em ambientes que exigem disciplina, padrão de qualidade e visão sistêmica.</p>
+          </div>
+
+          <div class="timeline home-timeline">
             <div class="timeline-item reveal reveal-premium">
               <div class="dot"></div>
               <div class="content">
-                <h4>Estagiário de Laboratório - Ambev</h4>
-                <span>2022 • Controle de Qualidade</span>
-                <p>
-                  Atuação em laboratório industrial com foco em qualidade de insumos, análise técnica e validação de processos. Experiência com padrões rigorosos e ambiente corporativo
-                  estruturado.
-                </p>
+                <span class="timeline-periodo">2022</span>
+                <h4>Estagiário de Laboratório</h4>
+                <span class="timeline-empresa">Ambev · Controle de Qualidade</span>
+                <p>Atuação em laboratório industrial com foco em qualidade de insumos, análise técnica e validação de processos. Experiência com padrões rigorosos e ambiente corporativo estruturado.</p>
               </div>
             </div>
 
             <div class="timeline-item reveal reveal-premium">
               <div class="dot"></div>
               <div class="content">
-                <h4>Assistente Administrativo - Zappellini</h4>
-                <span>2023 - Atual</span>
+                <span class="timeline-periodo">2023 — Atual</span>
+                <h4>Assistente Administrativo</h4>
+                <span class="timeline-empresa">Zappellini</span>
                 <p>Responsável por organização de processos, controle de dados e suporte operacional. Desenvolvimento de visão sistêmica, disciplina e eficiência organizacional.</p>
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="home-secao-footer reveal reveal-premium">
+          <a href="pages/sobre.html" class="home-secao-link">Conheça minha trajetória<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
     <!--======================| Sobre |======================-->
 
     <!--======================| Habilidades |======================-->
-    <section class="habilidades">
+    <section class="habilidades" id="habilidades">
       <div class="container">
-        <header class="reveal reveal-premium">
-          <h2>Habilidades</h2>
-        </header>
-        <p class="tag">Tecnologias & Ferramentas</p>
+        <div class="home-secao-header reveal reveal-premium">
+          <header>
+            <h2>Habilidades</h2>
+            <p class="tag">Tecnologias & Ferramentas</p>
+          </header>
+          <p class="home-secao-desc">Utilizo um conjunto de tecnologias modernas para desenvolver aplicações completas, focadas em performance, escalabilidade e experiência do usuário.</p>
+        </div>
 
-        <p class="descricao">Utilizo um conjunto de tecnologias modernas para desenvolver aplicações completas, focadas em performance, escalabilidade e experiência do usuário.</p>
+        <div class="home-skill-bloco">
+          <div class="home-subsecao reveal reveal-premium">
+            <p class="tag">Interface</p>
+            <h3>Frontend</h3>
+          </div>
 
-        <div class="categoria">
-          <h3>Frontend</h3>
-
-          <div class="skills-grid">
-            <div class="skill-card reveal reveal-premium">
-              <a class="skill-link" href="https://developer.mozilla.org/docs/Web/HTML" target="_blank" rel="noopener noreferrer" aria-label="Documentacao oficial do HTML5">
+          <div class="skills-grid home-skills-grid">
+            <article class="skill-card reveal reveal-premium">
+              <a class="skill-link" href="https://developer.mozilla.org/docs/Web/HTML" target="_blank" rel="noopener noreferrer" aria-label="Documentação oficial do HTML5">
                 <i class="fa-brands fa-html5" style="color: #e34f26"></i>
-                <span>HTML5</span>
+                <span class="skill-nome">HTML5</span>
+                <span class="skill-tag">Semântica & SEO</span>
               </a>
-            </div>
+            </article>
 
-            <div class="skill-card reveal reveal-premium">
-              <a class="skill-link" href="https://developer.mozilla.org/docs/Web/CSS" target="_blank" rel="noopener noreferrer" aria-label="Documentacao oficial do CSS3">
+            <article class="skill-card reveal reveal-premium">
+              <a class="skill-link" href="https://developer.mozilla.org/docs/Web/CSS" target="_blank" rel="noopener noreferrer" aria-label="Documentação oficial do CSS3">
                 <i class="fa-brands fa-css3-alt" style="color: #1572b6"></i>
-                <span>CSS3</span>
+                <span class="skill-nome">CSS3</span>
+                <span class="skill-tag">Layout & animações</span>
               </a>
-            </div>
+            </article>
 
-            <div class="skill-card reveal reveal-premium">
-              <a class="skill-link" href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" aria-label="Documentacao oficial do JavaScript">
+            <article class="skill-card reveal reveal-premium">
+              <a class="skill-link" href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" aria-label="Documentação oficial do JavaScript">
                 <i class="fa-brands fa-js" style="color: #f7df1e"></i>
-                <span>JavaScript</span>
+                <span class="skill-nome">JavaScript</span>
+                <span class="skill-tag">Interatividade</span>
               </a>
-            </div>
+            </article>
 
-            <div class="skill-card reveal reveal-premium">
+            <article class="skill-card reveal reveal-premium">
               <a class="skill-link" href="https://react.dev/" target="_blank" rel="noopener noreferrer" aria-label="Site oficial do React">
                 <i class="fa-brands fa-react" style="color: #61dafb"></i>
-                <span>React</span>
+                <span class="skill-nome">React</span>
+                <span class="skill-tag">Componentes & SPA</span>
               </a>
-            </div>
+            </article>
 
-            <div class="skill-card reveal reveal-premium">
+            <article class="skill-card reveal reveal-premium">
               <a class="skill-link" href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" aria-label="Site oficial do Bootstrap">
                 <i class="fa-brands fa-bootstrap" style="color: #7952b3"></i>
-                <span>Bootstrap</span>
+                <span class="skill-nome">Bootstrap</span>
+                <span class="skill-tag">Grid responsivo</span>
               </a>
-            </div>
+            </article>
 
-            <div class="skill-card reveal reveal-premium">
+            <article class="skill-card reveal reveal-premium">
               <a class="skill-link" href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer" aria-label="Site oficial do Sass">
                 <i class="fa-brands fa-sass" style="color: #cc6699"></i>
-                <span>Sass</span>
+                <span class="skill-nome">Sass</span>
+                <span class="skill-tag">Estilos modulares</span>
               </a>
-            </div>
+            </article>
           </div>
         </div>
 
-        <div class="categoria">
-          <h3>Backend</h3>
+        <div class="home-skill-bloco">
+          <div class="home-subsecao reveal reveal-premium">
+            <p class="tag">Servidor</p>
+            <h3>Backend</h3>
+          </div>
 
-          <div class="skills-grid">
-            <div class="skill-card reveal reveal-premium">
+          <div class="skills-grid home-skills-grid">
+            <article class="skill-card reveal reveal-premium">
               <a class="skill-link" href="https://nodejs.org/" target="_blank" rel="noopener noreferrer" aria-label="Site oficial do Node.js">
                 <i class="fa-brands fa-node-js" style="color: #3c873a"></i>
-                <span>Node.js</span>
+                <span class="skill-nome">Node.js</span>
+                <span class="skill-tag">APIs & runtime</span>
               </a>
-            </div>
+            </article>
 
-            <div class="skill-card reveal reveal-premium">
+            <article class="skill-card reveal reveal-premium">
               <a class="skill-link" href="https://www.python.org/" target="_blank" rel="noopener noreferrer" aria-label="Site oficial do Python">
                 <i class="fa-brands fa-python" style="color: #3776ab"></i>
-                <span>Python</span>
+                <span class="skill-nome">Python</span>
+                <span class="skill-tag">Automação & scripts</span>
               </a>
-            </div>
+            </article>
 
-            <div class="skill-card reveal reveal-premium">
+            <article class="skill-card reveal reveal-premium">
               <a class="skill-link" href="https://www.php.net/" target="_blank" rel="noopener noreferrer" aria-label="Site oficial do PHP">
                 <i class="fa-brands fa-php" style="color: #777bb4"></i>
-                <span>PHP</span>
+                <span class="skill-nome">PHP</span>
+                <span class="skill-tag">Aplicações web</span>
               </a>
-            </div>
+            </article>
 
-            <div class="skill-card reveal reveal-premium">
-              <a class="skill-link" href="https://www.w3schools.com/sql/" target="_blank" rel="noopener noreferrer" aria-label="Referencia de SQL">
+            <article class="skill-card reveal reveal-premium">
+              <a class="skill-link" href="https://www.w3schools.com/sql/" target="_blank" rel="noopener noreferrer" aria-label="Referência de SQL">
                 <i class="fa-solid fa-database" style="color: #f39c12"></i>
-                <span>SQL</span>
+                <span class="skill-nome">SQL</span>
+                <span class="skill-tag">Modelagem de dados</span>
               </a>
-            </div>
+            </article>
 
-            <div class="skill-card reveal reveal-premium">
+            <article class="skill-card reveal reveal-premium">
               <a class="skill-link" href="https://www.java.com/" target="_blank" rel="noopener noreferrer" aria-label="Site oficial do Java">
                 <i class="fa-brands fa-java" style="color: #f89820"></i>
-                <span>Java</span>
+                <span class="skill-nome">Java</span>
+                <span class="skill-tag">Lógica & estrutura</span>
               </a>
-            </div>
+            </article>
           </div>
         </div>
 
-        <div class="categoria">
-          <h3>Design & Ferramentas</h3>
+        <div class="home-skill-bloco">
+          <div class="home-subsecao reveal reveal-premium">
+            <p class="tag">Produção</p>
+            <h3>Design & Ferramentas</h3>
+          </div>
 
-          <div class="skills-grid">
-            <div class="skill-card reveal reveal-premium">
+          <div class="skills-grid home-skills-grid">
+            <article class="skill-card reveal reveal-premium">
               <a class="skill-link" href="https://www.figma.com/" target="_blank" rel="noopener noreferrer" aria-label="Site oficial do Figma">
                 <i class="fa-brands fa-figma" style="color: #f24e1e"></i>
-                <span>Figma</span>
+                <span class="skill-nome">Figma</span>
+                <span class="skill-tag">UI/UX & protótipos</span>
               </a>
-            </div>
+            </article>
 
-            <div class="skill-card reveal reveal-premium">
+            <article class="skill-card reveal reveal-premium">
               <a class="skill-link" href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" aria-label="Site oficial do Git">
                 <i class="fa-brands fa-git-alt" style="color: #f05032"></i>
-                <span>Git</span>
+                <span class="skill-nome">Git</span>
+                <span class="skill-tag">Controle de versão</span>
               </a>
-            </div>
+            </article>
 
-            <div class="skill-card reveal reveal-premium">
+            <article class="skill-card reveal reveal-premium">
               <a class="skill-link" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="Site oficial do GitHub">
                 <i class="fa-brands fa-github" style="color: #ffffff"></i>
-                <span>GitHub</span>
+                <span class="skill-nome">GitHub</span>
+                <span class="skill-tag">Repositórios & CI</span>
               </a>
-            </div>
+            </article>
 
-            <div class="skill-card reveal reveal-premium">
+            <article class="skill-card reveal reveal-premium">
               <a class="skill-link" href="https://www.docker.com/" target="_blank" rel="noopener noreferrer" aria-label="Site oficial do Docker">
                 <i class="fa-brands fa-docker" style="color: #2496ed"></i>
-                <span>Docker</span>
+                <span class="skill-nome">Docker</span>
+                <span class="skill-tag">Containers</span>
               </a>
-            </div>
+            </article>
 
-            <div class="skill-card reveal reveal-premium">
+            <article class="skill-card reveal reveal-premium">
               <a class="skill-link" href="https://www.linux.org/" target="_blank" rel="noopener noreferrer" aria-label="Site oficial do Linux">
                 <i class="fa-brands fa-linux" style="color: #fcc624"></i>
-                <span>Linux</span>
+                <span class="skill-nome">Linux</span>
+                <span class="skill-tag">Servidor & CLI</span>
               </a>
-            </div>
+            </article>
 
-            <div class="skill-card reveal reveal-premium">
+            <article class="skill-card reveal reveal-premium">
               <a class="skill-link" href="https://cloud.google.com/learn/what-is-cloud-computing" target="_blank" rel="noopener noreferrer" aria-label="Conceitos de cloud computing">
                 <i class="fa-solid fa-cloud" style="color: #00aaff"></i>
-                <span>Cloud</span>
+                <span class="skill-nome">Cloud</span>
+                <span class="skill-tag">Hospedagem & escala</span>
               </a>
-            </div>
+            </article>
           </div>
+        </div>
+
+        <div class="home-secao-footer reveal reveal-premium">
+          <a href="pages/habilidades.html" class="home-secao-link">Ver stack completa<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
     <!--======================| Habilidades |======================-->
 
     <!--======================| Certificações |======================-->
-    <section class="certificacoes">
+    <section class="certificacoes" id="certificacoes">
       <div class="container">
-        <header class="reveal reveal-premium">
-          <h2>Certificações</h2>
-        </header>
-        <p class="tag">Competências Comprovadas</p>
+        <div class="home-secao-header reveal reveal-premium">
+          <header>
+            <h2>Certificações</h2>
+            <p class="tag">Competências Comprovadas</p>
+          </header>
+          <p class="home-secao-desc">
+            Ao longo da minha jornada de aprendizado em tecnologia, busco constantemente aprimorar minhas habilidades por meio de cursos e certificações em desenvolvimento web, programação e ferramentas utilizadas no mercado.
+          </p>
+        </div>
 
-        <p class="certificacoes-intro">
-          Ao longo da minha jornada de aprendizado em tecnologia, tenho buscado constantemente aprimorar minhas habilidades por meio de cursos e certificações em desenvolvimento web,
-          programação e ferramentas utilizadas no mercado.
-        </p>
+        <div class="bloco">
+          <div class="sobre-secao reveal reveal-premium">
+            <p class="tag">Tecnologia</p>
+            <h3>Desenvolvimento, dados & automação</h3>
+            <p class="sobre-secao-desc">Formações diretamente aplicadas em projetos web — da modelagem de dados à programação e integração de sistemas.</p>
+          </div>
 
-        <div class="certificacoes-grid">
-          <article class="certificacao reveal reveal-premium">
-            <h3>Biotechnology Technician</h3>
-            <div class="cert-header">
-              <img src="assets/ifsc.png" loading="lazy" alt="IFSC" />
-              <p class="instituicao">Instituto Federal de Santa Catarina</p>
-            </div>
-            <p>
-              Atuação em processos biotecnológicos, incluindo manipulação de organismos, técnicas laboratoriais e aplicação de métodos científicos em áreas como saúde, meio ambiente e
-              indústria.
-            </p>
-            <a href="assets/certificados/tecnico-em-biotecnologia.pdf" target="_blank" rel="noopener noreferrer" class="btn-certificado">Ver certificado</a>
-          </article>
+          <div class="certificacoes-grid">
+            <article class="certificacao reveal reveal-premium">
+              <span class="cert-tag">Dados</span>
+              <h3>DataBase Administrator</h3>
+              <div class="cert-header">
+                <img src="assets/ifrs.png" loading="lazy" alt="IFRS" />
+                <p class="instituicao">Instituto Federal do Rio Grande do Sul</p>
+              </div>
+              <p>Gerenciamento e manutenção de bancos de dados, incluindo modelagem, otimização de consultas, segurança da informação e garantia de integridade e disponibilidade dos dados.</p>
+              <a href="assets/certificados/administrador-banco-de-dados.pdf" target="_blank" rel="noopener noreferrer" class="btn-certificado">Ver certificado<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
+            </article>
 
-          <article class="certificacao reveal reveal-premium">
-            <h3>Assistant in Chemistry and Biology Laboratory</h3>
-            <div class="cert-header">
-              <img src="assets/ifsc.png" loading="lazy" alt="IFSC" />
-              <p class="instituicao">Instituto Federal de Santa Catarina</p>
-            </div>
-            <p>Suporte em rotinas laboratoriais de química e biologia, com preparo de amostras, organização de materiais, execução de experimentos e correção de normas de segurança.</p>
-            <a href="assets/certificados/auxiliar-laboratorio-quimica-biologia.pdf" target="_blank" rel="noopener noreferrer" class="btn-certificado">Ver certificado</a>
-          </article>
+            <article class="certificacao reveal reveal-premium">
+              <span class="cert-tag">Programação</span>
+              <h3>Advanced Python</h3>
+              <div class="cert-header">
+                <img src="assets/ifmg.png" loading="lazy" alt="IFMG" />
+                <p class="instituicao">Instituto Federal de Minas Gerais</p>
+              </div>
+              <p>Desenvolvimento avançado em Python, com foco em automação, manipulação de dados, boas práticas de código e utilização de bibliotecas modernas para soluções eficientes.</p>
+              <a href="assets/certificados/python-avancado.pdf" target="_blank" rel="noopener noreferrer" class="btn-certificado">Ver certificado<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
+            </article>
 
-          <article class="certificacao reveal reveal-premium">
-            <h3>DataBase Administrator</h3>
-            <div class="cert-header">
-              <img src="assets/ifrs.png" loading="lazy" alt="IFRS" />
-              <p class="instituicao">Instituto Federal do Rio Grande do Sul</p>
-            </div>
-            <p>Gerenciamento e manutenção de bancos de dados, incluindo modelagem, otimização de consultas, segurança da informação e garantia de integridade e disponibilidade dos dados.</p>
-            <a href="assets/certificados/administrador-banco-de-dados.pdf" target="_blank" rel="noopener noreferrer" class="btn-certificado">Ver certificado</a>
-          </article>
+            <article class="certificacao reveal reveal-premium">
+              <span class="cert-tag">Automação</span>
+              <h3>Automated Systems Operator and Programmer</h3>
+              <div class="cert-header">
+                <img src="assets/ifmg.png" loading="lazy" alt="IFMG" />
+                <p class="instituicao">Instituto Federal de Minas Gerais</p>
+              </div>
+              <p>Operação e programação de sistemas automatizados, envolvendo lógica de controle, integração de dispositivos e monitoramento de processos industriais.</p>
+              <a href="assets/certificados/praticas-iniciais-em-clp.pdf" target="_blank" rel="noopener noreferrer" class="btn-certificado">Ver certificado<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
+            </article>
 
-          <article class="certificacao reveal reveal-premium">
-            <h3>Advanced Python</h3>
-            <div class="cert-header">
-              <img src="assets/ifmg.png" loading="lazy" alt="IFMG" />
-              <p class="instituicao">Instituto Federal de Minas Gerais</p>
-            </div>
-            <p>Desenvolvimento avançado em Python, com foco em automação, manipulação de dados, boas práticas de código e utilização de bibliotecas modernas para soluções eficientes.</p>
-            <a href="assets/certificados/python-avancado.pdf" target="_blank" rel="noopener noreferrer" class="btn-certificado">Ver certificado</a>
-          </article>
+            <article class="certificacao reveal reveal-premium">
+              <span class="cert-tag">Big Data</span>
+              <h3>Advanced Big Data and Data Mining</h3>
+              <div class="cert-header">
+                <img src="assets/ifmg.png" loading="lazy" alt="IFMG" />
+                <p class="instituicao">Instituto Federal de Minas Gerais</p>
+              </div>
+              <p>Análise de grandes volumes de dados utilizando técnicas de Big Data e mineração de dados, com foco em extração de padrões, insights e suporte à tomada de decisão.</p>
+              <a href="assets/certificados/big-data-avancado.pdf" target="_blank" rel="noopener noreferrer" class="btn-certificado">Ver certificado<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
+            </article>
 
-          <article class="certificacao reveal reveal-premium">
-            <h3>Automated Systems Operator and Programmer</h3>
-            <div class="cert-header">
-              <img src="assets/ifmg.png" loading="lazy" alt="IFMG" />
-              <p class="instituicao">Instituto Federal de Minas Gerais</p>
-            </div>
-            <p>Operação e programação de sistemas automatizados, envolvendo lógica de controle, integração de dispositivos e monitoramento de processos industriais.</p>
-            <a href="assets/certificados/praticas-iniciais-em-clp.pdf" target="_blank" rel="noopener noreferrer" class="btn-certificado">Ver certificado</a>
-          </article>
+            <article class="certificacao reveal reveal-premium">
+              <span class="cert-tag">Mobile</span>
+              <h3>Mobile Programming</h3>
+              <div class="cert-header">
+                <img src="assets/ifmg.png" loading="lazy" alt="IFMG" />
+                <p class="instituicao">Instituto Federal de Minas Gerais</p>
+              </div>
+              <p>Desenvolvimento de aplicações mobile, com foco em interfaces responsivas, experiência do usuário e integração com APIs e serviços externos.</p>
+              <a href="assets/certificados/programacao-dispositivos-moveis-basico.pdf" target="_blank" rel="noopener noreferrer" class="btn-certificado">Ver certificado<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
+            </article>
+          </div>
+        </div>
 
-          <article class="certificacao reveal reveal-premium">
-            <h3>Advanced Big Data and Data Mining</h3>
-            <div class="cert-header">
-              <img src="assets/ifmg.png" loading="lazy" alt="IFMG" />
-              <p class="instituicao">Instituto Federal de Minas Gerais</p>
-            </div>
-            <p>Análise de grandes volumes de dados utilizando técnicas de Big Data e mineração de dados, com foco em extração de padrões, insights e suporte à tomada de decisão.</p>
-            <a href="assets/certificados/big-data-avancado.pdf" target="_blank" rel="noopener noreferrer" class="btn-certificado">Ver certificado</a>
-          </article>
+        <div class="bloco">
+          <div class="sobre-secao reveal reveal-premium">
+            <p class="tag">Complementar</p>
+            <h3>Formação técnica & analítica</h3>
+            <p class="sobre-secao-desc">Base científica e laboratorial que reforça rigor, organização e precisão nas entregas digitais.</p>
+          </div>
 
-          <article class="certificacao reveal reveal-premium">
-            <h3>Mobile Programming</h3>
-            <div class="cert-header">
-              <img src="assets/ifmg.png" loading="lazy" alt="IFMG" />
-              <p class="instituicao">Instituto Federal de Minas Gerais</p>
-            </div>
-            <p>Desenvolvimento de aplicações mobile, com foco em interfaces responsivas, experiência do usuário e integração com APIs e serviços externos.</p>
-            <a href="assets/certificados/programacao-dispositivos-moveis-basico.pdf" target="_blank" rel="noopener noreferrer" class="btn-certificado">Ver certificado</a>
-          </article>
+          <div class="certificacoes-grid">
+            <article class="certificacao reveal reveal-premium">
+              <span class="cert-tag">Biotecnologia</span>
+              <h3>Biotechnology Technician</h3>
+              <div class="cert-header">
+                <img src="assets/ifsc.png" loading="lazy" alt="IFSC" />
+                <p class="instituicao">Instituto Federal de Santa Catarina</p>
+              </div>
+              <p>Atuação em processos biotecnológicos, incluindo manipulação de organismos, técnicas laboratoriais e aplicação de métodos científicos em áreas como saúde, meio ambiente e indústria.</p>
+              <a href="assets/certificados/tecnico-em-biotecnologia.pdf" target="_blank" rel="noopener noreferrer" class="btn-certificado">Ver certificado<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
+            </article>
 
-          <article class="certificacao reveal reveal-premium">
-            <h3>Chromatography</h3>
-            <div class="cert-header">
-              <img src="assets/embrapa.png" loading="lazy" alt="Embrapa" />
-              <p class="instituicao">Embrapa</p>
-            </div>
-            <p>Aplicação de técnicas cromatográficas para separação e análise de substâncias, com foco em precisão, controle de qualidade e interpretação de resultados laboratoriais.</p>
-            <a href="assets/certificados/cromatografia.pdf" target="_blank" rel="noopener noreferrer" class="btn-certificado">Ver certificado</a>
-          </article>
+            <article class="certificacao reveal reveal-premium">
+              <span class="cert-tag">Laboratório</span>
+              <h3>Assistant in Chemistry and Biology Laboratory</h3>
+              <div class="cert-header">
+                <img src="assets/ifsc.png" loading="lazy" alt="IFSC" />
+                <p class="instituicao">Instituto Federal de Santa Catarina</p>
+              </div>
+              <p>Suporte em rotinas laboratoriais de química e biologia, com preparo de amostras, organização de materiais, execução de experimentos e observância de normas de segurança.</p>
+              <a href="assets/certificados/auxiliar-laboratorio-quimica-biologia.pdf" target="_blank" rel="noopener noreferrer" class="btn-certificado">Ver certificado<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="certificacao reveal reveal-premium">
+              <span class="cert-tag">Análise</span>
+              <h3>Chromatography</h3>
+              <div class="cert-header">
+                <img src="assets/embrapa.png" loading="lazy" alt="Embrapa" />
+                <p class="instituicao">Embrapa</p>
+              </div>
+              <p>Aplicação de técnicas cromatográficas para separação e análise de substâncias, com foco em precisão, controle de qualidade e interpretação de resultados laboratoriais.</p>
+              <a href="assets/certificados/cromatografia.pdf" target="_blank" rel="noopener noreferrer" class="btn-certificado">Ver certificado<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
+            </article>
+          </div>
+        </div>
+
+        <div class="home-secao-footer reveal reveal-premium">
+          <a href="pages/certificacoes.html" class="home-secao-link">Ver todas as certificações<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
     <!--======================| Certificações |======================-->
 
     <!--======================| Contatos |======================-->
-    <section class="contatos">
+    <section class="contatos" id="contatos">
       <div class="container">
-        <header class="reveal reveal-premium">
-          <h2>Contato</h2>
-        </header>
-        <p class="tag">Entre em contato</p>
-
-        <p class="contato-desc">Tem um projeto em mente ou precisa de um site profissional? Entre em contato e vamos conversar.</p>
+        <div class="home-secao-header reveal reveal-premium">
+          <header>
+            <h2>Contato</h2>
+            <p class="tag">Vamos conversar</p>
+          </header>
+          <p class="home-secao-desc">Tem um projeto em mente ou precisa de um site profissional? Envie uma mensagem ou chame no WhatsApp — respondo com clareza e sem compromisso na conversa inicial.</p>
+        </div>
 
         <div class="contato-wrapper">
           <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST" class="form-contato reveal reveal-premium">
-            <div class="input-group">
-              <input type="text" name="nome" required />
-              <label>Seu nome</label>
+            <div class="form-contato-header">
+              <h4>Solicitar orçamento</h4>
+              <p>Preencha os campos abaixo e retorno com uma proposta alinhada ao seu objetivo.</p>
             </div>
 
             <div class="input-group">
-              <input type="email" name="email" required />
-              <label>Seu e-mail</label>
+              <input type="text" name="nome" id="home-nome" required autocomplete="name" />
+              <label for="home-nome">Seu nome</label>
             </div>
 
             <div class="input-group">
-              <textarea name="mensagem" rows="5" required></textarea>
-              <label>Mensagem</label>
+              <input type="email" name="email" id="home-email" required autocomplete="email" />
+              <label for="home-email">Seu e-mail</label>
             </div>
 
-            <button type="submit" class="btn-contato">Enviar mensagem</button>
+            <div class="input-group">
+              <textarea name="mensagem" id="home-mensagem" rows="5" required></textarea>
+              <label for="home-mensagem">Descreva seu projeto</label>
+            </div>
+
+            <button type="submit" class="btn-contato">Enviar mensagem<span class="btn-cta-arrow" aria-hidden="true">→</span></button>
           </form>
 
           <div class="contato-info reveal reveal-premium">
-            <h3>Fale comigo</h3>
-            <p class="contato-status">🟢 Disponível para projetos</p>
-            <p class="contato-desc">Estou disponível para novos projetos, freelas ou oportunidades. Respondo rápido e sem compromisso.</p>
+            <div class="contato-info-top">
+              <h3>Fale comigo</h3>
+              <p class="contato-status"><span class="status-dot" aria-hidden="true"></span>Disponível para projetos</p>
+              <p class="contato-desc">Estou aberto a novos projetos, freelas e parcerias. Priorizo respostas objetivas e alinhamento claro desde o primeiro contato.</p>
+              <a href="https://wa.me/49999981782" class="contato-wa-btn" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
+            </div>
 
             <div class="contato-lista">
-              <a href="tel:+5549999981782" class="contato-item">
+              <a href="https://wa.me/49999981782" class="contato-item reveal reveal-premium" target="_blank" rel="noopener noreferrer">
                 <span class="icon fa-brands fa-whatsapp" style="color: #25d366" aria-hidden="true"></span>
                 <div>
-                  <strong>Whatsapp</strong>
+                  <strong>WhatsApp</strong>
                   <p>(49) 99998-1782</p>
+                  <span class="contato-item-tag">Resposta mais rápida</span>
                 </div>
               </a>
 
-              <a href="mailto:tiagoseinfert@gmail.com" class="contato-item">
+              <a href="mailto:tiagoseinfert@gmail.com" class="contato-item reveal reveal-premium">
                 <span class="icon fa-solid fa-envelope" style="color: #17d1b2" aria-hidden="true"></span>
                 <div>
-                  <strong>Email</strong>
+                  <strong>E-mail</strong>
                   <p>tiagoseinfert@gmail.com</p>
+                  <span class="contato-item-tag">Propostas formais</span>
                 </div>
               </a>
 
-              <a href="https://github.com/tiagovieira-dev" target="_blank" rel="noopener noreferrer" aria-label="Perfil no GitHub de Tiago Vieira" class="contato-item">
+              <a href="https://github.com/tiagovieira-dev" target="_blank" rel="noopener noreferrer" aria-label="Perfil no GitHub de Tiago Vieira" class="contato-item reveal reveal-premium">
                 <span class="icon fa-brands fa-github" style="color: #ffffff" aria-hidden="true"></span>
                 <div>
                   <strong>GitHub</strong>
                   <p>/tiagovieira-dev</p>
+                  <span class="contato-item-tag">Código & projetos</span>
                 </div>
               </a>
 
-              <a href="https://www.linkedin.com/in/tiago-vieira-0540531aa/" target="_blank" rel="noopener noreferrer" aria-label="Perfil no LinkedIn de Tiago Vieira" class="contato-item">
+              <a href="https://www.linkedin.com/in/tiago-vieira-0540531aa/" target="_blank" rel="noopener noreferrer" aria-label="Perfil no LinkedIn de Tiago Vieira" class="contato-item reveal reveal-premium">
                 <span class="icon fa-brands fa-linkedin" style="color: #0a66c2" aria-hidden="true"></span>
                 <div>
                   <strong>LinkedIn</strong>
                   <p>Conecte-se comigo</p>
+                  <span class="contato-item-tag">Rede profissional</span>
                 </div>
               </a>
 
-              <a href="https://www.instagram.com/tiago_ngc/" target="_blank" rel="noopener noreferrer" aria-label="Perfil no Instagram de Tiago Vieira" class="contato-item">
+              <a href="https://www.instagram.com/tiago_ngc/" target="_blank" rel="noopener noreferrer" aria-label="Perfil no Instagram de Tiago Vieira" class="contato-item reveal reveal-premium">
                 <span class="icon fa-brands fa-instagram" style="color: #e4405f" aria-hidden="true"></span>
                 <div>
                   <strong>Instagram</strong>
                   <p>@tiago_ngc</p>
+                  <span class="contato-item-tag">Bastidores & conteúdo</span>
                 </div>
               </a>
             </div>
@@ -676,11 +909,10 @@
       <div class="container">
         <div class="cta-final-box reveal">
           <div class="cta-content">
-            <h3>Vamos transformar sua presença digital?</h3>
-
-            <p>Crio sites e sistemas modernos, rápidos e estratégicos para posicionar seu negócio de forma profissional e gerar resultados reais.</p>
-
-            <a href="pages/contatos.html" class="btn-cta">Solicitar orçamento</a>
+            <span class="cta-eyebrow">Resposta em até 24 horas</span>
+            <h3>Pronto para dar o próximo passo?</h3>
+            <p>Vamos alinhar objetivos, prazo e a melhor solução para posicionar seu negócio com site ou sistema profissional.</p>
+            <a href="https://wa.me/49999981782" class="btn-cta btn-cta--whatsapp" target="_blank" rel="noopener noreferrer">Falar no WhatsApp<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
           </div>
         </div>
       </div>

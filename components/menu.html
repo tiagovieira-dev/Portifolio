@@ -1,7 +1,10 @@
-<header class="main-menu">
+<header class="main-menu" id="main-menu">
   <nav class="navbar" aria-label="Menu principal">
     <div class="nav-container">
-      <h1 class="logo"><a href="index.html" data-route="index.html">Tiago Vieira</a></h1>
+      <a class="logo" href="index.html" data-route="index.html" aria-label="Tiago Vieira — Página inicial">
+        <span class="logo-mark" aria-hidden="true">TV</span>
+        <span class="logo-text">Tiago Vieira</span>
+      </a>
 
       <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
         <span></span>
@@ -16,11 +19,17 @@
         <li><a href="pages/sobre.html" data-route="pages/sobre.html">Sobre</a></li>
         <li><a href="pages/habilidades.html" data-route="pages/habilidades.html">Habilidades</a></li>
         <li><a href="pages/certificacoes.html" data-route="pages/certificacoes.html">Certificações</a></li>
-        <li><a href="pages/contatos.html" data-route="pages/contatos.html">Contatos</a></li>
+        <li class="nav-cta-item"><a class="nav-cta" href="pages/contatos.html" data-route="pages/contatos.html">Contato</a></li>
       </ul>
     </div>
   </nav>
-  <aside class="menu-mobile-panel" id="mobile-menu" aria-hidden="true">
+
+  <aside class="menu-mobile-panel" id="mobile-menu" aria-hidden="true" aria-label="Menu mobile">
+    <div class="menu-mobile-head">
+      <p class="menu-mobile-eyebrow">Navegação</p>
+      <p class="menu-mobile-title">Explore o portfólio</p>
+    </div>
+
     <ul class="menu-mobile-links">
       <li><a href="index.html" data-route="index.html">Home</a></li>
       <li><a href="pages/servicos.html" data-route="pages/servicos.html">Serviços</a></li>
@@ -28,8 +37,13 @@
       <li><a href="pages/sobre.html" data-route="pages/sobre.html">Sobre</a></li>
       <li><a href="pages/habilidades.html" data-route="pages/habilidades.html">Habilidades</a></li>
       <li><a href="pages/certificacoes.html" data-route="pages/certificacoes.html">Certificações</a></li>
-      <li><a href="pages/contatos.html" data-route="pages/contatos.html">Contatos</a></li>
+      <li><a href="pages/contatos.html" data-route="pages/contatos.html">Contato</a></li>
     </ul>
+
+    <div class="menu-mobile-footer">
+      <a class="menu-mobile-cta" href="pages/contatos.html" data-route="pages/contatos.html">Solicitar orçamento<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
+    </div>
   </aside>
+
   <div class="menu-backdrop" id="menu-backdrop" aria-hidden="true"></div>
 </header>

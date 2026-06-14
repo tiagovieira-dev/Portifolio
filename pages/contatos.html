@@ -89,81 +89,191 @@
     <!--======================| Menu |======================-->
 
     <!--======================| Contatos |======================-->
-    <section class="contatos">
+    <section class="contatos contatos-pagina">
       <div class="container">
         <header class="reveal reveal-premium">
           <h2>Contato</h2>
+          <p class="tag">Vamos conversar</p>
         </header>
-        <p class="tag">Entre em contato</p>
 
-        <p class="contato-desc">Tem um projeto em mente ou precisa de um site profissional? Entre em contato e vamos conversar.</p>
+        <div class="contatos-hero reveal reveal-premium">
+          <p class="contatos-hero-eyebrow">Canal direto para novos projetos</p>
+          <h3 class="contatos-hero-titulo">Transforme sua ideia em um site ou sistema profissional</h3>
+          <p class="contatos-intro">
+            Tem um projeto em mente ou precisa de presença digital de alto nível? Envie uma mensagem ou chame no WhatsApp — respondo com clareza sobre escopo, prazo e investimento, sem compromisso na conversa inicial.
+          </p>
+          <div class="contatos-hero-meta">
+            <span>Resposta em 24h</span>
+            <span>Orçamento transparente</span>
+            <span>Atendimento remoto</span>
+            <span>Lages, SC</span>
+          </div>
+        </div>
 
-        <div class="contato-wrapper">
-          <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST" class="form-contato reveal reveal-premium">
-            <div class="input-group">
-              <input type="text" name="nome" required />
-              <label>Seu nome</label>
+        <div class="sobre-stats reveal reveal-premium" aria-label="Indicadores de atendimento">
+          <article class="sobre-stat">
+            <strong>24h</strong>
+            <span>Resposta inicial</span>
+          </article>
+          <article class="sobre-stat">
+            <strong>100%</strong>
+            <span>Sem compromisso</span>
+          </article>
+          <article class="sobre-stat">
+            <strong>Remoto</strong>
+            <span>Atendimento online</span>
+          </article>
+          <article class="sobre-stat">
+            <strong>Full</strong>
+            <span>Sites & sistemas</span>
+          </article>
+        </div>
+
+        <div class="bloco">
+          <div class="sobre-secao reveal reveal-premium">
+            <p class="tag">Canais</p>
+            <h3>Envie sua mensagem ou fale comigo agora</h3>
+            <p class="sobre-secao-desc">Escolha o canal que preferir — formulário, WhatsApp, e-mail ou redes profissionais.</p>
+          </div>
+
+          <div class="contato-wrapper">
+            <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST" class="form-contato reveal reveal-premium">
+              <div class="form-contato-header">
+                <h4>Solicitar orçamento</h4>
+                <p>Preencha os campos abaixo e retorno com uma proposta alinhada ao seu objetivo.</p>
+              </div>
+
+              <div class="input-group">
+                <input type="text" name="nome" id="contato-nome" required autocomplete="name" />
+                <label for="contato-nome">Seu nome</label>
+              </div>
+
+              <div class="input-group">
+                <input type="email" name="email" id="contato-email" required autocomplete="email" />
+                <label for="contato-email">Seu e-mail</label>
+              </div>
+
+              <div class="input-group">
+                <textarea name="mensagem" id="contato-mensagem" rows="5" required></textarea>
+                <label for="contato-mensagem">Descreva seu projeto</label>
+              </div>
+
+              <button type="submit" class="btn-contato">Enviar mensagem<span class="btn-cta-arrow" aria-hidden="true">→</span></button>
+            </form>
+
+            <div class="contato-info reveal reveal-premium">
+              <div class="contato-info-top">
+                <h3>Fale comigo</h3>
+                <p class="contato-status"><span class="status-dot" aria-hidden="true"></span>Disponível para projetos</p>
+                <p class="contato-desc">Estou aberto a novos projetos, freelas e parcerias. Priorizo respostas objetivas e alinhamento claro desde o primeiro contato.</p>
+                <a href="https://wa.me/49999981782" class="contato-wa-btn" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
+              </div>
+
+              <div class="contato-lista">
+                <a href="https://wa.me/49999981782" class="contato-item reveal reveal-premium" target="_blank" rel="noopener noreferrer">
+                  <span class="icon fa-brands fa-whatsapp" style="color: #25d366" aria-hidden="true"></span>
+                  <div>
+                    <strong>WhatsApp</strong>
+                    <p>(49) 99998-1782</p>
+                    <span class="contato-item-tag">Resposta mais rápida</span>
+                  </div>
+                </a>
+
+                <a href="mailto:tiagoseinfert@gmail.com" class="contato-item reveal reveal-premium">
+                  <span class="icon fa-solid fa-envelope" style="color: #17d1b2" aria-hidden="true"></span>
+                  <div>
+                    <strong>E-mail</strong>
+                    <p>tiagoseinfert@gmail.com</p>
+                    <span class="contato-item-tag">Propostas formais</span>
+                  </div>
+                </a>
+
+                <a href="https://github.com/tiagovieira-dev" target="_blank" rel="noopener noreferrer" aria-label="Perfil no GitHub de Tiago Vieira" class="contato-item reveal reveal-premium">
+                  <span class="icon fa-brands fa-github" style="color: #ffffff" aria-hidden="true"></span>
+                  <div>
+                    <strong>GitHub</strong>
+                    <p>/tiagovieira-dev</p>
+                    <span class="contato-item-tag">Código & projetos</span>
+                  </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/tiago-vieira-0540531aa/" target="_blank" rel="noopener noreferrer" aria-label="Perfil no LinkedIn de Tiago Vieira" class="contato-item reveal reveal-premium">
+                  <span class="icon fa-brands fa-linkedin" style="color: #0a66c2" aria-hidden="true"></span>
+                  <div>
+                    <strong>LinkedIn</strong>
+                    <p>Conecte-se comigo</p>
+                    <span class="contato-item-tag">Rede profissional</span>
+                  </div>
+                </a>
+
+                <a href="https://www.instagram.com/tiago_ngc/" target="_blank" rel="noopener noreferrer" aria-label="Perfil no Instagram de Tiago Vieira" class="contato-item reveal reveal-premium">
+                  <span class="icon fa-brands fa-instagram" style="color: #e4405f" aria-hidden="true"></span>
+                  <div>
+                    <strong>Instagram</strong>
+                    <p>@tiago_ngc</p>
+                    <span class="contato-item-tag">Bastidores & conteúdo</span>
+                  </div>
+                </a>
+              </div>
             </div>
+          </div>
+        </div>
 
-            <div class="input-group">
-              <input type="email" name="email" required />
-              <label>Seu e-mail</label>
-            </div>
+        <div class="bloco">
+          <div class="sobre-secao reveal reveal-premium">
+            <p class="tag">Processo</p>
+            <h3>Como funciona o atendimento</h3>
+            <p class="sobre-secao-desc">Do primeiro contato à proposta — fluxo simples, transparente e sem burocracia.</p>
+          </div>
 
-            <div class="input-group">
-              <textarea name="mensagem" rows="5" required></textarea>
-              <label>Mensagem</label>
-            </div>
+          <div class="sobre-processo">
+            <article class="sobre-passo reveal reveal-premium">
+              <span class="sobre-passo-num">1</span>
+              <h4>Você envia a mensagem</h4>
+              <p>Preencha o formulário ou chame no WhatsApp com uma breve descrição do que precisa.</p>
+            </article>
 
-            <button type="submit" class="btn-contato">Enviar mensagem</button>
-          </form>
+            <article class="sobre-passo reveal reveal-premium">
+              <span class="sobre-passo-num">2</span>
+              <h4>Alinho escopo e prazo</h4>
+              <p>Analiso sua necessidade e retorno com proposta clara de escopo, cronograma e investimento.</p>
+            </article>
 
-          <div class="contato-info reveal reveal-premium">
-            <h3>Fale comigo</h3>
-            <p class="contato-status">🟢 Disponível para projetos</p>
-            <p class="contato-desc">Estou disponível para novos projetos, freelas ou oportunidades. Respondo rápido e sem compromisso.</p>
+            <article class="sobre-passo reveal reveal-premium">
+              <span class="sobre-passo-num">3</span>
+              <h4>Iniciamos o projeto</h4>
+              <p>Com alinhamento fechado, começamos o desenvolvimento com entregas parciais e comunicação objetiva.</p>
+            </article>
+          </div>
+        </div>
 
-            <div class="contato-lista">
-              <a href="tel:+5549999981782" class="contato-item">
-                <span class="icon fa-brands fa-whatsapp" style="color: #25d366" aria-hidden="true"></span>
-                <div>
-                  <strong>Whatsapp</strong>
-                  <p>(49) 99998-1782</p>
-                </div>
-              </a>
+        <div class="bloco">
+          <div class="sobre-secao reveal reveal-premium">
+            <p class="tag">FAQ</p>
+            <h3>Dúvidas frequentes sobre contato</h3>
+            <p class="sobre-secao-desc">Respostas rápidas para você entrar em contato com mais tranquilidade.</p>
+          </div>
 
-              <a href="mailto:tiagoseinfert@gmail.com" class="contato-item">
-                <span class="icon fa-solid fa-envelope" style="color: #17d1b2" aria-hidden="true"></span>
-                <div>
-                  <strong>Email</strong>
-                  <p>tiagoseinfert@gmail.com</p>
-                </div>
-              </a>
+          <div class="contatos-faq-list">
+            <details class="faq-item reveal reveal-premium" open>
+              <summary>Quanto tempo leva para receber retorno?</summary>
+              <p>Geralmente respondo em até 24 horas. Pelo WhatsApp, o retorno costuma ser ainda mais rápido em horário comercial.</p>
+            </details>
 
-              <a href="https://github.com/tiagovieira-dev" target="_blank" rel="noopener noreferrer" aria-label="Perfil no GitHub de Tiago Vieira" class="contato-item">
-                <span class="icon fa-brands fa-github" style="color: #ffffff" aria-hidden="true"></span>
-                <div>
-                  <strong>GitHub</strong>
-                  <p>/tiagovieira-dev</p>
-                </div>
-              </a>
+            <details class="faq-item reveal reveal-premium">
+              <summary>A conversa inicial tem custo?</summary>
+              <p>Não. A primeira conversa serve para entender sua necessidade e alinhar expectativas — sem compromisso de contratação.</p>
+            </details>
 
-              <a href="https://www.linkedin.com/in/tiago-vieira-0540531aa/" target="_blank" rel="noopener noreferrer" aria-label="Perfil no LinkedIn de Tiago Vieira" class="contato-item">
-                <span class="icon fa-brands fa-linkedin" style="color: #0a66c2" aria-hidden="true"></span>
-                <div>
-                  <strong>LinkedIn</strong>
-                  <p>Conecte-se comigo</p>
-                </div>
-              </a>
+            <details class="faq-item reveal reveal-premium">
+              <summary>Atende clientes fora de Lages?</summary>
+              <p>Sim. Trabalho de forma remota com clientes de qualquer região do Brasil, com reuniões online quando necessário.</p>
+            </details>
 
-              <a href="https://www.instagram.com/tiago_ngc/" target="_blank" rel="noopener noreferrer" aria-label="Perfil no Instagram de Tiago Vieira" class="contato-item">
-                <span class="icon fa-brands fa-instagram" style="color: #e4405f" aria-hidden="true"></span>
-                <div>
-                  <strong>Instagram</strong>
-                  <p>@tiago_ngc</p>
-                </div>
-              </a>
-            </div>
+            <details class="faq-item reveal reveal-premium">
+              <summary>O que devo incluir na mensagem?</summary>
+              <p>Descreva o objetivo do projeto, tipo de solução (site, sistema, landing page), prazo desejado e referências visuais, se tiver.</p>
+            </details>
           </div>
         </div>
       </div>
@@ -175,11 +285,10 @@
       <div class="container">
         <div class="cta-final-box reveal">
           <div class="cta-content">
-            <h3>Vamos transformar sua presença digital?</h3>
-
-            <p>Crio sites e sistemas modernos, rápidos e estratégicos para posicionar seu negócio de forma profissional e gerar resultados reais.</p>
-
-            <a href="contatos.html" class="btn-cta">Solicitar orçamento</a>
+            <span class="cta-eyebrow">Atendimento direto</span>
+            <h3>Prefere resolver agora?</h3>
+            <p>Chame no WhatsApp e receba retorno rápido para tirar dúvidas, alinhar escopo ou solicitar orçamento.</p>
+            <a href="https://wa.me/49999981782" class="btn-cta btn-cta--whatsapp" target="_blank" rel="noopener noreferrer">Iniciar conversa<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
           </div>
         </div>
       </div>
