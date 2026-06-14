@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../assets/fonts/fa-brands-subset.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../assets/fonts/fa-solid-subset.woff2") format("woff2");
+}
+
+.fa-brands,
+.fa-solid {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+.fa-brands {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+}
+
+.fa-solid {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.fa-brands.fa-html5::before {
+  content: "\f13b";
+}
+
+.fa-brands.fa-css3-alt::before {
+  content: "\f38b";
+}
+
+.fa-brands.fa-js::before {
+  content: "\f3b9";
+}
+
+.fa-brands.fa-react::before {
+  content: "\f41b";
+}
+
+.fa-brands.fa-bootstrap::before {
+  content: "\f836";
+}
+
+.fa-brands.fa-sass::before {
+  content: "\f41e";
+}
+
+.fa-brands.fa-node-js::before {
+  content: "\f3d3";
+}
+
+.fa-brands.fa-python::before {
+  content: "\f3e2";
+}
+
+.fa-brands.fa-php::before {
+  content: "\f457";
+}
+
+.fa-brands.fa-java::before {
+  content: "\f4e4";
+}
+
+.fa-brands.fa-figma::before {
+  content: "\f799";
+}
+
+.fa-brands.fa-git-alt::before {
+  content: "\f841";
+}
+
+.fa-brands.fa-github::before {
+  content: "\f09b";
+}
+
+.fa-brands.fa-docker::before {
+  content: "\f395";
+}
+
+.fa-brands.fa-linux::before {
+  content: "\f17c";
+}
+
+.fa-solid.fa-database::before {
+  content: "\f1c0";
+}
+
+.fa-solid.fa-cloud::before {
+  content: "\f0c2";
+}
